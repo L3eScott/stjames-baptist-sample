@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Ministry | St. James Baptist Church</title>
+  <meta name="description" content="Youth ministry at St. James — Wednesday nights for 6th–12th graders. Bible study, community, real adults who care.">
+  <link rel="canonical" href="https://stjamesbaptist.example.org/youth.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="brand"><span class="mark">SJ</span><span>St. James Baptist Church</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ministries.html">Ministries</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="give.html" class="cta">Give</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <img class="hero-logo" src="assets/images/sj-logo.jpg" alt="St. James Baptist Church logo">
+      <h1>Youth Ministry</h1>
+      <p>For 6th–12th graders. Wednesday nights, every week. Real teaching, real community, and adults who actually want to be there.</p>
+    </section>
+
+    <section class="section">
+      <div class="inner" style="max-width: 800px;">
+        <div class="callout">
+          <h3>When &amp; Where</h3>
+          <p><strong>Wednesday nights, 6:30–8:00 PM</strong><br>
+          {{YOUTH_ROOM_LOCATION — e.g., "Youth Hall, behind the sanctuary"}}</p>
+        </div>
+
+        <h2 style="margin-top: 40px;">For Parents</h2>
+        <p style="color: var(--text-light);">We know what it takes for you to drop your student off here. We want you to know what they're walking into.</p>
+
+        <h3 style="margin-top: 28px;">What we teach</h3>
+        <p>We teach the Bible. We don't dumb it down. We don't dress it up. We help students wrestle with what Scripture actually says and what it means for who they're becoming.</p>
+
+        <h3 style="margin-top: 24px;">Who teaches</h3>
+        <p>Our youth ministry is led by {{YOUTH_LEADER_NAMES}}. Every adult who works with our youth has been background-checked and works in pairs &mdash; we don't have one-adult-alone-with-students situations, ever.</p>
+
+        <h3 style="margin-top: 24px;">Permission forms</h3>
+        <p>Annual permission forms are required for retreats, off-site events, and overnight trips. These are digital &mdash; we'll send them when needed.</p>
+
+        <h3 style="margin-top: 24px;">Parent communication</h3>
+        <p>Parents stay in the loop through direct email and text from our youth leaders. Important updates, schedule changes, and event reminders come straight to you &mdash; not through your student's phone.</p>
+
+        <h2 style="margin-top: 56px;">For Students</h2>
+        <p style="color: var(--text-light);">Come hungry. We usually have food.</p>
+
+        <p>Whether you've been coming since the day you could walk or whether you've never set foot in a church before, you're welcome here. We meet every Wednesday at 6:30 PM in {{YOUTH_ROOM_LOCATION}}. Bring a friend. Bring your questions. Bring whatever kind of week you've had.</p>
+
+        <div class="callout" style="margin-top: 40px; background: var(--cream);">
+          <h3>The Scholarship Program</h3>
+          <p>If you're a graduating senior or already in college and looking for help with tuition — our church's scholarship ministry is open to students from our community.</p>
+          <p><a href="../youth-scholarship-sample/index.html" class="btn">Learn About the SJ Youth Ministry</a></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/images/sj-logo.jpg" alt="St. James Baptist Church logo">
+            <span class="footer-brand-name">St. James Baptist Church</span>
+          </div>
+          <p>1105 North 44th St.<br>Baton Rouge, LA 70802</p>
+          <p><a href="tel:2259241550">(225) 924-1550</a><br><a href="mailto:hello@stjamesbaptistchurch.org">hello@stjamesbaptistchurch.org</a></p>
+          <div class="social"><a href="#" title="Facebook (placeholder)" aria-label="Facebook">f</a><a href="#" title="YouTube (placeholder)" aria-label="YouTube">▶</a></div>
+        </div>
+        <div><h4>Visit</h4><ul><li><a href="plan-your-visit.html">Plan Your Visit</a></li><li><a href="contact.html">Directions</a></li></ul></div>
+        <div><h4>Connect</h4><ul><li><a href="ministries.html">Ministries</a></li><li><a href="youth.html">Youth</a></li><li><a href="sermons.html">Sermons</a></li><li><a href="contact.html">Prayer Requests</a></li></ul></div>
+        <div><h4>Give</h4><ul><li><a href="give.html">Give Online</a></li><li><a href="../youth-scholarship-sample/index.html">SJ Youth Ministry</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 St. James Baptist Church.</span><span class="build-credit">Built with care by Digital Ops Systems.</span></div>
+    </div>
+  </footer>
+
+  <script>document.querySelector('.nav-toggle')?.addEventListener('click', () => document.querySelector('nav ul').classList.toggle('open'));</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Prayer Requests | St. James Baptist Church</title>
+  <meta name="description" content="Contact St. James Baptist Church. Phone, email, address, and a private prayer request form routed to our pastoral prayer team.">
+  <link rel="canonical" href="https://stjamesbaptist.example.org/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="brand"><span class="mark">SJ</span><span>St. James Baptist Church</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ministries.html">Ministries</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="give.html" class="cta">Give</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <img class="hero-logo" src="assets/images/sj-logo.jpg" alt="St. James Baptist Church logo">
+      <h1>Contact &amp; Prayer Requests</h1>
+      <p>However you'd like to reach us — phone, email, walk-in, prayer request — we're here.</p>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <div class="visit-grid">
+          <div class="visit-block">
+            <h3>Reach Us</h3>
+            <p><strong>1105 North 44th St.</strong><br>Baton Rouge, LA 70802</p>
+            <p><strong>Phone:</strong> <a href="tel:2259241550">(225) 924-1550</a><br>
+            <strong>Email:</strong> <a href="mailto:hello@stjamesbaptistchurch.org">hello@stjamesbaptistchurch.org</a></p>
+
+            <h3 style="margin-top: 32px;">Office Hours</h3>
+            <p>{{OFFICE_HOURS — e.g., "Tuesday–Thursday, 9 AM–2 PM. Call ahead — we're a small staff."}}</p>
+
+            <h3 style="margin-top: 32px;">Pastor J. L. Franklin</h3>
+            <p>Pastor J. L. Franklin is available for pastoral conversations, hospital visits, prayer, and walking through hard seasons. Call him directly: <strong><a href="tel:{{PASTOR_PHONE}}">{{PASTOR_PHONE}}</a></strong>. He answers his phone.</p>
+          </div>
+
+          <div class="visit-block">
+            <h3>Prayer Request</h3>
+            <p style="color: var(--text-light); font-size: 14px;">Your request goes to our private pastoral prayer team. We do not share names or details outside that group unless you specifically ask us to.</p>
+
+            <form>
+              <div>
+                <label for="pr-name">Your Name (or "anonymous")</label>
+                <input type="text" id="pr-name" name="name" placeholder="First name is enough">
+              </div>
+              <div>
+                <label for="pr-email">Email (optional)</label>
+                <input type="email" id="pr-email" name="email" placeholder="So we can follow up if you'd like">
+              </div>
+              <div>
+                <label for="pr-request">Your Request</label>
+                <textarea id="pr-request" name="request" placeholder="Share as much or as little as you want." required></textarea>
+              </div>
+              <div>
+                <label for="pr-share">Sharing</label>
+                <select id="pr-share" name="share">
+                  <option>Pastor &amp; prayer team only (private)</option>
+                  <option>OK to share with our church family (no names)</option>
+                  <option>OK to share with names</option>
+                </select>
+              </div>
+              <button type="submit" class="btn">Submit Prayer Request</button>
+              <p class="form-note">Your request is routed to a private team — never posted publicly without your permission.</p>
+            </form>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 64px;">Find Us</h2>
+        <p style="color: var(--text-light); margin-bottom: 20px;">We're at 1105 North 44th St., off Greenwell Springs Rd. in Baton Rouge. Plenty of parking.</p>
+        <div style="border-radius: 6px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line);">
+          <iframe
+            src="https://maps.google.com/maps?q=1105+North+44th+St,+Baton+Rouge,+LA+70802&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            width="100%" height="340" frameborder="0" style="border:0; display:block;"
+            allowfullscreen="" loading="lazy"
+            title="St. James Baptist Church — 1105 North 44th St., Baton Rouge, LA 70802"></iframe>
+        </div>
+        <p style="margin-top: 14px; text-align: center;">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1105+North+44th+St,+Baton+Rouge,+LA+70802" target="_blank" rel="noopener" class="btn btn-navy">Get Driving Directions</a>
+        </p>
+
+        <div class="callout" style="margin-top: 56px;">
+          <h3>Need to talk to someone today?</h3>
+          <p>If you're in crisis or just need someone to listen, Pastor J. L. Franklin's personal number is <strong><a href="tel:{{PASTOR_PHONE}}">{{PASTOR_PHONE}}</a></strong>. Call any time. He won't be annoyed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/images/sj-logo.jpg" alt="St. James Baptist Church logo">
+            <span class="footer-brand-name">St. James Baptist Church</span>
+          </div>
+          <p>1105 North 44th St.<br>Baton Rouge, LA 70802</p>
+          <p><a href="tel:2259241550">(225) 924-1550</a><br><a href="mailto:hello@stjamesbaptistchurch.org">hello@stjamesbaptistchurch.org</a></p>
+          <div class="social"><a href="#" title="Facebook (placeholder)" aria-label="Facebook">f</a><a href="#" title="YouTube (placeholder)" aria-label="YouTube">▶</a></div>
+        </div>
+        <div><h4>Visit</h4><ul><li><a href="plan-your-visit.html">Plan Your Visit</a></li><li><a href="contact.html">Directions</a></li></ul></div>
+        <div><h4>Connect</h4><ul><li><a href="ministries.html">Ministries</a></li><li><a href="youth.html">Youth</a></li><li><a href="sermons.html">Sermons</a></li><li><a href="contact.html">Prayer Requests</a></li></ul></div>
+        <div><h4>Give</h4><ul><li><a href="give.html">Give Online</a></li><li><a href="../youth-scholarship-sample/index.html">SJ Youth Ministry</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 St. James Baptist Church.</span><span class="build-credit">Built with care by Digital Ops Systems.</span></div>
+    </div>
+  </footer>
+
+  <script>document.querySelector('.nav-toggle')?.addEventListener('click', () => document.querySelector('nav ul').classList.toggle('open'));</script>
+
+</body>
+</html>
